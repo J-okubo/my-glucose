@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                   |
+| ---------------    | -------| --------------------------|
+| name               | string | null: false               |
+| email              | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
+| profile            | text   | null: false               |
 
-* Ruby version
+- has_many :post
+- has_many :post_comments
 
-* System dependencies
+## posts テーブル
 
-* Configuration
+| Column       | Type       | Options                        |
+| ------------ | ---------- | ------------------------------ |
+| content      | text       | null: false                    |
+| user         | references | null: false, foreign_key: true |
 
-* Database creation
+- belongs_to :user
 
-* Database initialization
+## post_comments テーブル
 
-* How to run the test suite
+| Column  | Type       | Options                        |
+| --------| ---------- | ------------------------------ |
+| content | text       | null: false                    |
+| post    | references | null: false, foreign_key: true |
+| user    | references | null: false, foreign_key: true |
 
-* Services (job queues, cache servers, search engines, etc.)
+- belongs_to :user
 
-* Deployment instructions
+## bloods テーブル
 
-* ...
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| date        | date       | null: false                    |
+| time        | integer    | null: false                    |
+| before meal | integer    | null: false                    |
+| after  meal | integer    | null: false                    |
+| user        | references | null: false, foreign_key: true |
+
+- belongs_to :user
