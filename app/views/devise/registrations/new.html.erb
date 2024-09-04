@@ -1,0 +1,47 @@
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+ 
+  <div class= "loginContents">
+   <div class="title"><i class="fa-solid fa-user-plus"></i>新規登録</div>
+    <div class="formContainer">
+     <i class="fa-solid fa-user"></i>
+     <%= f.label :ユーザーネーム %><em>(6 characters maximum)</em><br />
+     <%= f.text_field :name, autofocus: true, maxlength: "6" %>
+    </div>
+
+  <div class="formContainer">
+    <i class="fa-solid fa-envelope"></i>
+    <%= f.label :メールアドレス %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="formContainer">
+    <i class="fa-solid fa-key"></i>
+    <%= f.label :パスワード %>
+    <% if @minimum_password_length %>
+    <em>(半角英数字含む<%= @minimum_password_length %>文字以上12文字以内)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="formContainer">
+    <i class="fa-solid fa-key"></i>
+    <%= f.label :確認用パスワード %><br/>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+  
+  <div class="formContainer">
+    <i class="fa-solid fa-address-card"></i>
+    <%= f.label :プロフィール %><br/>
+    <%= f.text_area :profile, autofocus: true, maxlength: "200" %>
+  </div>
+
+  <div class="formContainer">
+    <%= f.submit "登録" %>
+    <%= render "devise/shared/links" %>
+  </div>
+ </div>
+<% end %>
+
+

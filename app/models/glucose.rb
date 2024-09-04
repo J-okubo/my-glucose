@@ -1,0 +1,2 @@
+class Glucose < ApplicationRecord
+end
