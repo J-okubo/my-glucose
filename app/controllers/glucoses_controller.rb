@@ -1,6 +1,6 @@
 class GlucosesController < ApplicationController
-  def index
+
+  def show
     @glucoses = Glucose.all
   end
-
 end

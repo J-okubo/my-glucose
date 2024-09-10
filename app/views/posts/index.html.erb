@@ -1,7 +1,11 @@
 <% @posts.each do |form| %>
  <div class="timeline-post">
     <div class="content_post">
-      <p><%= form.text %></p>
+      <p><%= form.content %></p>
+      <p><%= form.image %></p>
+       <div class="users_nav_info">
+        <%= form.user.name %>
+       </div>
     </div>  
  </div>
 <% end %>

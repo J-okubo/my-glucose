@@ -676,7 +676,7 @@ a:hover {
 
 .serif,
 div.contents.row div.content_post p {
-  font-family: 'ほのか明朝', serif;
+  font-family: 'メイリオ', serif;
 }
 
 .ultra {
@@ -706,8 +706,8 @@ form input[type="submit"] {
 
 .btn,
 header.header div.header__bar.row div.grid-6 a.post {
-  padding: 8px 20px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 15px;
   border: 2px solid #999999;
   color: #7b7b7b;
   font-weight: bold;
@@ -753,13 +753,12 @@ header.header div.header__bar.row {
 }
 
 header.header div.header__bar.row h1.grid-6 {
-  font-size: 20px;
-  line-height: 41px;
-  float: left;
+  font-size: 30px;
 }
 
 header.header div.header__bar.row h1.grid-6 a {
-  display: block;
+  position: fixed;
+  padding-left: 50px;
 }
 
 header.header div.header__bar.row div.grid-6 {
@@ -1073,7 +1072,6 @@ footer p {
   width: 10%;
 }
 
-
 /* ポストCSS   */
 
 body {
@@ -1098,8 +1096,9 @@ body {
     border: 1px solid #dfdfdf;
     box-shadow: 0px 0px 30px 3px #a2a0a0;
     border-radius: 10px; 
-    margin-left: 350px;
+    margin-left: 400px;
     margin-bottom: 15px; 
+    display: flex;
 }
 
 .post-header {
@@ -1135,11 +1134,15 @@ body {
     line-height: 1.5;
     color: #333;
 }
+.users_nav_info{
+  border-bottom: 1px solid #BBBBBB;
+  text-align: right;
+}
+
 
 /* ポストCSS   */
 
 /*  サイドバーCSS   */
-
 .header-content {
   display: flex;
 }
@@ -1149,8 +1152,9 @@ body {
   color:#898989;  
   justify-content: flex-end;
   display: flex;
-  padding-left: 700px;
-  padding-top: 10px;
+  padding-left: 1040px;
+  top: 10px;
+  position: absolute; 
 }
 
 .sidebar {
@@ -1161,7 +1165,7 @@ body {
   height: 100%;
   background-color:#F0FFF0;
   z-index: 10; 
-  transition: right 0.3s ease-in-out;
+  transition: right 0.4s ease-in-out;
 }
 
 .sidebar a {
@@ -1170,6 +1174,7 @@ body {
   color: #909090;
   text-decoration: none;
   border-bottom: 1px solid #BBBBBB;
+  font-size:large;
 }
 
 .sidebar a i {
@@ -1215,4 +1220,30 @@ body {
 .title-h1 {
   text-align: center;
 }
+
+.users_info {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute; 
+  left: -250px;
+  top: 10px; /* 上端からの余白調整 */
+  border-bottom: 1px solid #BBBBBB;
+}
+
 /* ログイン  CCS   */
+
+/* 血糖値データ  CCS   */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+/* 血糖値データ  CCS   */

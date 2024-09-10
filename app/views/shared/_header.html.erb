@@ -4,6 +4,13 @@
       <div class="user_nav grid-6">
         <%= link_to "投稿", new_post_path, class: "post" %>
       </div>
+      <div class="users_info">
+        <% if user_signed_in? %>
+          <%= current_user.name %> さん
+        <% else %>
+           ゲストユーザーさん
+        <% end %>
+      </div>
       <%= render "shared/sidebar" %>
    </div>
 </header>
