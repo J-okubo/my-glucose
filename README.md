@@ -17,7 +17,6 @@
 | Column       | Type       | Options                        |
 | ------------ | ---------- | ------------------------------ |
 | content      | text       | null: false                    |
-| user         | references | null: false, foreign_key: true |
 
 - belongs_to :user
 
@@ -27,7 +26,6 @@
 | --------| ---------- | ------------------------------ |
 | content | text       | null: false                    |
 | post    | references | null: false, foreign_key: true |
-| user    | references | null: false, foreign_key: true |
 
 - belongs_to :user
 
@@ -43,6 +41,5 @@
 | before_dinner_glucose    | integer    | null: false                    |
 | after_dinner_glucose     | integer    | null: false                    |
 | remarks_section          | text       | null: false                    |
-| user                     | references | null: false, foreign_key: true |
 
 - belongs_to :user

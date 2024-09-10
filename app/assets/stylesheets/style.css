@@ -708,8 +708,8 @@ form input[type="submit"] {
 header.header div.header__bar.row div.grid-6 a.post {
   padding: 10px 20px;
   font-size: 15px;
-  border: 2px solid #999999;
-  color: #7b7b7b;
+  border: 2px solid #aaa8a8;
+  color: #6b6a6a;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
@@ -758,7 +758,7 @@ header.header div.header__bar.row h1.grid-6 {
 
 header.header div.header__bar.row h1.grid-6 a {
   position: fixed;
-  padding-left: 50px;
+  padding-left: 60px;
 }
 
 header.header div.header__bar.row div.grid-6 {
@@ -988,19 +988,22 @@ div.contents.row .success h3 {
 
 form input,
 form textarea {
-  width: 100%;
-  margin: 5px 0 15px;
+  width: 80%;
+  margin: 5px 0 15px; 
   padding: 10px;
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
+  justify-content: center;
 }
 
 form input[type="submit"] {
   background-color: #d0d7da;
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   border: 0;
-  font-size: 18px;
+  font-size: 20px;
+  width: 150px;
+  padding: 5px; 
 }
 
 form input[type="submit"]:hover {
@@ -1008,7 +1011,7 @@ form input[type="submit"]:hover {
 }
 
 .container {
-  margin: 20px 0;
+  margin: 0 auto; 
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   background-color: white;
@@ -1016,7 +1019,8 @@ form input[type="submit"]:hover {
   border-radius:  10px;
   border: 1px solid #dfdfdf;
   box-shadow: 0px 0px 30px 3px #c6c5c5;
-  border-radius: 10px; 
+  border-radius: 10px;
+  text-align: center; 
 }
 
 .container h3 {
@@ -1056,6 +1060,7 @@ footer.footer {
 
 footer p {
   text-align: center;
+  padding-left: 100px;
 }
 
 .search-form {
@@ -1099,6 +1104,9 @@ body {
     margin-left: 400px;
     margin-bottom: 15px; 
     display: flex;
+    justify-content: center; 
+    align-items: left; 
+    flex-direction: column; 
 }
 
 .post-header {
@@ -1205,6 +1213,7 @@ body {
   flex-direction: column;
   align-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .title {
@@ -1236,14 +1245,26 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
+  padding-bottom:  80%;
 }
+
 th, td {
-  border: 1px solid #dddddd;
+  border: 2px solid #737272;
   text-align: center;
-  padding: 8px;
+  background-color: #ffffff;
 }
-th {
-  background-color: #f2f2f2;
+.custom-text-field{
+ margin-right: 3%;
+ height: 50%;
+
+}
+
+.glucose_nav{
+  text-align: center;
+  font-size: 30px;
+}
+.btn-actions{
+  text-align: right; 
 }
 
 /* 血糖値データ  CCS   */

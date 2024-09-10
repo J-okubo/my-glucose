@@ -6,7 +6,10 @@
 </div>
 <div class="sidebar" id="sidebar">
    <a href="/"><i class="fas fa-home">ホーム</i></a>
-   <a href="/glucoses/show"><i class="fa-solid fa-syringe">血糖値データ</i></a>
+   <a href="/"><i class="fa-sharp-duotone fa-solid fa-id-card">プロフィール</i></a>
+   <% if user_signed_in? %>
+    <%= link_to "血糖値データ", new_glucose_path, class:"fa-solid fa-syringe" %> 
+   <% end %>
    <% if user_signed_in? %>
       <%= link_to "ログアウト", destroy_user_session_path, class:"fa-solid fa-user", data: { turbo_method: :delete } %>   
    <% else %>

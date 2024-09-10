@@ -9,7 +9,6 @@ class CreateGlucoses < ActiveRecord::Migration[7.0]
       t.integer :before_dinner_glucose,     null: false
       t.integer :after_dinner_glucose,      null: false
       t.text :remarks_section,              null: false
-      t.references :user,                   null: false, foreign_key: true
       t.timestamps
     end
   end
