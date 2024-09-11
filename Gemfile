@@ -39,3 +39,6 @@ gem 'dotenv-rails'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth', '~>2.1.1'
 gem "devise"
+group :production do
+  gem 'pg'
+end
