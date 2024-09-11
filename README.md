@@ -17,7 +17,6 @@
 | Column       | Type       | Options                        |
 | ------------ | ---------- | ------------------------------ |
 | content      | text       | null: false                    |
-| user         | references | null: false, foreign_key: true |
 
 - belongs_to :user
 
@@ -27,18 +26,20 @@
 | --------| ---------- | ------------------------------ |
 | content | text       | null: false                    |
 | post    | references | null: false, foreign_key: true |
-| user    | references | null: false, foreign_key: true |
 
 - belongs_to :user
 
 ## bloods テーブル
 
-| Column      | Type       | Options                        |
-| ----------- | ---------- | ------------------------------ |
-| date        | date       | null: false                    |
-| time        | integer    | null: false                    |
-| before meal | integer    | null: false                    |
-| after  meal | integer    | null: false                    |
-| user        | references | null: false, foreign_key: true |
+| Column                   | Type       | Options                        |
+| ------------------------ | ---------- | ------------------------------ |
+| date                     | date       | null: false                    |
+| before_breakfast_glucose | integer    | null: false                    |
+| after_breakfast_glucose  | integer    | null: false                    |
+| before_lunch_glucose     | integer    | null: false                    |
+| after_lunch_glucose      | integer    | null: false                    |
+| before_dinner_glucose    | integer    | null: false                    |
+| after_dinner_glucose     | integer    | null: false                    |
+| remarks_section          | text       | null: false                    |
 
 - belongs_to :user

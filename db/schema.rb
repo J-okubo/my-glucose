@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_09_04_150413) do
+ActiveRecord::Schema[7.0].define(version: 2024_09_10_170159) do
   create_table "active_storage_attachments", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -41,36 +41,49 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_04_150413) do
 
   create_table "glucoses", charset: "utf8", force: :cascade do |t|
     t.date "date", null: false
-    t.integer "time", null: false
-    t.integer "before_meal", null: false
-    t.integer "after_meal", null: false
-    t.bigint "user_id", null: false
+    t.integer "before_breakfast_glucose", null: false
+    t.integer "after_breakfast_glucose", null: false
+    t.integer "before_lunch_glucose", null: false
+    t.integer "after_lunch_glucose", null: false
+    t.integer "before_dinner_glucose", null: false
+    t.integer "after_dinner_glucose", null: false
+    t.text "remarks_section", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_glucoses_on_user_id"
   end
 
   create_table "posts", charset: "utf8", force: :cascade do |t|
-    t.string "text"
+    t.text "content", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
+
+  create_table "sns_credentials", charset: "utf8", force: :cascade do |t|
+    t.string "provider"
+    t.string "uid"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_sns_credentials_on_user_id"
   end
 
   create_table "users", charset: "utf8", force: :cascade do |t|
+    t.string "name", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.string "profile", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "name", limit: 100, null: false
-    t.string "profile", limit: 100
     t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "glucoses", "users"
+  add_foreign_key "posts", "users"
+  add_foreign_key "sns_credentials", "users"
 end
