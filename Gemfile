@@ -29,7 +29,6 @@ group :test do
   gem "webdrivers"
 end
 gem 'pry-rails'
-gem 'devise'
 gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 gem 'rspec-rails', '~> 4.0.0'
@@ -39,3 +38,4 @@ gem 'omniauth-google-oauth2'
 gem 'dotenv-rails'
 gem 'omniauth-rails_csrf_protection'
 gem 'omniauth', '~>2.1.1'
+gem "devise", "~> 4.9"
