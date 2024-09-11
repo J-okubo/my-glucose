@@ -1,3 +1,4 @@
+
 <div class= "glucose_nav">
  <p>血糖値管理表<i class="fa-solid fa-syringe"></i></p>
 </div>
@@ -15,17 +16,17 @@
     </tr>
   </thead>
   <tbody>
-    <% @glucoses.each do |glucose| %>
+    <% @glucoses.each do |g| %>
       <tr>
-        <td><%= glucose.date %></td>
-        <td><%= glucose.before_breakfast_glucose %></td>
-        <td><%= glucose.after_breakfast_glucose %></td>
-        <td><%= glucose.before_lunch_glucose %></td>
-        <td><%= glucose.after_lunch_glucose %></td>
-        <td><%= glucose.before_dinner_glucose %></td>
-        <td><%= glucose.after_dinner_glucose %></td>
-        <td><%= glucose.remarks_section %></td>
+        <td><%= g.date %></td>
+        <td><%= g.before_breakfast_glucose %></td> 
+        <td><%= g.after_breakfast_glucose %></td> 
+        <td><%= g.before_lunch_glucose %></td> 
+        <td><%= g.after_lunch_glucose %></td> 
+        <td><%= g.before_dinner_glucose %></td> 
+        <td><%= g.after_dinner_glucose %></td> 
+        <td><%= g.remarks_section %></td> 
       </tr>
-    <% end %>
+     <% end %>
   </tbody>
 </table>
