@@ -14,9 +14,9 @@
 
 ## posts テーブル
 
-| Column       | Type       | Options                        |
-| ------------ | ---------- | ------------------------------ |
-| content      | text       | null: false                    |
+| Column       | Type       | Options     |
+| ------------ | ---------- | ------------|
+| content      | text       | null: false |
 
 - belongs_to :user
 
