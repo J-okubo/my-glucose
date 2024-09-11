@@ -1,7 +1,4 @@
 class GlucosesController < ApplicationController
-  # before_action :set_glucose, only: [:edit, :show]
-  # before_action :move_to_index, except: [:index, :show]
-
   def index
     @glucoses = Glucose.all
   end
@@ -28,9 +25,6 @@ class GlucosesController < ApplicationController
     params.require(:glucose).permit(:date, :before_breakfast_glucose, :after_breakfast_glucose, :before_lunch_glucose, :after_lunch_glucose, :before_dinner_glucose, :after_dinner_glucose, :remarks_section)
   end
 
-  # def set_glucose
-  #   @glucose = Glucoses.find(params[:id])
-  # end
 
   def move_to_index
     unless user_signed_in?
