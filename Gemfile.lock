@@ -322,7 +322,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  devise (~> 4.9)
+  devise
   dotenv-rails
   factory_bot_rails
   faker
