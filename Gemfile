@@ -45,3 +45,4 @@ group :production do
   gem 'pg'
 end
 gem 'bundler', '~> 2.5.18'
+gem 'irb', '1.14.0'

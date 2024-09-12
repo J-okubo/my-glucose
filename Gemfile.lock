@@ -361,6 +361,7 @@ DEPENDENCIES
   faker
   image_processing (~> 1.2)
   importmap-rails
+  irb (= 1.14.0)
   jbuilder
   mini_magick
   mysql2 (~> 0.5)
