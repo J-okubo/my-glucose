@@ -1,0 +1,18 @@
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/home/okubojun/.rbenv/versions/3.2.0/bin/ruby -I /home/okubojun/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-av88rs sitelibdir\=./.gem.20240914-39484-av88rs clean
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-av88rs sitelibdir\=./.gem.20240914-39484-av88rs
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-av88rs sitelibdir\=./.gem.20240914-39484-av88rs install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240914-39484-av88rs/racc
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-av88rs sitelibdir\=./.gem.20240914-39484-av88rs clean

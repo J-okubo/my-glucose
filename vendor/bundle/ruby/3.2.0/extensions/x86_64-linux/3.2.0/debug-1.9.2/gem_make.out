@@ -1,0 +1,19 @@
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+/home/okubojun/.rbenv/versions/3.2.0/bin/ruby -I /home/okubojun/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-g46fn1 sitelibdir\=./.gem.20240914-39484-g46fn1 clean
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-g46fn1 sitelibdir\=./.gem.20240914-39484-g46fn1
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-g46fn1 sitelibdir\=./.gem.20240914-39484-g46fn1 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20240914-39484-g46fn1/debug
+
+current directory: /home/okubojun/Project/my-glucose/vendor/bundle/ruby/3.2.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240914-39484-g46fn1 sitelibdir\=./.gem.20240914-39484-g46fn1 clean
