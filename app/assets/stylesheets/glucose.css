@@ -1,0 +1,27 @@
+/* 血糖値データ  CCS   */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   padding-bottom:  80%;
+ }
+ 
+ th, td {
+   border: 2px solid #737272;
+   text-align: center;
+   background-color: #ffffff;
+ }
+ .custom-text-field{
+  margin-right: 3%;
+  height: 50%;
+ 
+ }
+ 
+ .glucose_nav{
+   text-align: center;
+   font-size: 30px;
+ }
+ .btn-actions{
+   text-align: right; 
+ }
+ 
+ /* 血糖値データ  CCS   */

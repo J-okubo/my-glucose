@@ -1,0 +1,44 @@
+/*  サイドバーCSS   */
+.header-content {
+   display: flex;
+ }
+ 
+ .hamburger-menu {
+   font-size: 30px;
+   color:#898989;  
+   justify-content: flex-end;
+   display: flex;
+   padding-left: 1040px;
+   top: 10px;
+   position: absolute; 
+ }
+ 
+ .sidebar {
+   position: fixed;
+   right: -250px;
+   top: 0;
+   width: 250px;
+   height: 100%;
+   background-color:#F0FFF0;
+   z-index: 10; 
+   transition: right 0.4s ease-in-out;
+ }
+ 
+ .sidebar a {
+   display: block;
+   padding: 16px;
+   color: #909090;
+   text-decoration: none;
+   border-bottom: 1px solid #BBBBBB;
+   font-size:large;
+ }
+ 
+ .sidebar a i {
+   margin-right: 10px;
+ }
+ 
+ .sidebar a:hover {
+   background-color: #b3fab3;
+ }
+ /*  サイドバーCSS   */
+ 
