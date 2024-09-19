@@ -1049,12 +1049,12 @@ footer.footer {
   height: 70px;
   margin: 0px auto;
   padding: 10px;
-  color: #080808;
+  color: #6b6a6a;
 }
 
 footer p {
   text-align: center;
-  padding-left: 100px;
+  padding-left: 65px;
 }
 
 .search-form {
