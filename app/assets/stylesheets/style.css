@@ -1038,24 +1038,6 @@ form input[type="submit"]:hover {
   text-decoration: underline;
 }
 
-footer.footer {
-  background-color:#FFFF99;
-  border-top: 1px solid #c2c2c2;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  height: 70px;
-  margin: 0px auto;
-  padding: 10px;
-  color: #6b6a6a;
-}
-
-footer p {
-  text-align: center;
-  padding-left: 65px;
-}
 
 .search-form {
   text-align: center;
