@@ -24,6 +24,10 @@ table {
  .glucose-data {
    width: 145px;
  }
+ 
+ .glucose_remarks {
+   width: 150px;
+ }
 
  .btn-actions{
    text-align: right; 

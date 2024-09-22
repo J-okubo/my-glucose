@@ -1,9 +1,6 @@
 <%= form_with model: @glucose, local: true do |g| %>
 <div class= "glucose_nav">
  <p>血糖値管理表<i class="fa-solid fa-syringe"></i></p>
- <div class="btn-actions">
-    <%= g.submit '保存' %>
-  </div>
 </div>
   <table>
      <thead>
@@ -27,8 +24,11 @@
             <td><%= g.text_field :after_lunch_glucose %></td>
             <td><%= g.text_field :before_dinner_glucose %></td>
             <td><%= g.text_field :after_dinner_glucose %></td>
-            <td><%= g.text_area :remarks_section %></td>
+            <td><%= g.text_area :remarks_section ,class:"glucose_remarks" %></td>
            </tr>
         </tbody>
    </table> 
+   <div class="btn-actions">
+    <%= g.submit '保存' %>
+  </div>
  <% end %>
