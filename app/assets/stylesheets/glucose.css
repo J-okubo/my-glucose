@@ -20,6 +20,11 @@ table {
    text-align: center;
    font-size: 30px;
  }
+ 
+ .glucose-data {
+   width: 145px;
+ }
+
  .btn-actions{
    text-align: right; 
  }
