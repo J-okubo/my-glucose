@@ -4,7 +4,7 @@
       <p><%= form.content %></p>
       <p><% form.image %></p>
        <div class="users_nav_info">
-        <%= form.user.name %>
+         <%= link_to form.user.name, post_path(form.id) %>
        </div>
     </div>  
  </div>
