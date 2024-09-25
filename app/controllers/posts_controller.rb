@@ -12,7 +12,6 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.user_id = current_user.id
     if @post.save
       redirect_to root_path
     else
@@ -20,15 +19,17 @@ class PostsController < ApplicationController
     end
   end
 
-  def edit
+  def show
+    @post = Post.find(params[:id])
   end
 
-  def show
+
+  def edit
   end
 
 private
   def post_params
-    params.require(:post).permit(:content)
+    params.require(:post).permit(:content).merge(user_id:current_user.id)
   end
 
   def set_post
